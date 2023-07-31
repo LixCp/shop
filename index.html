@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__shape">
+            <div class="header__shape-inner"></div>
+        </div>
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar__row">
+                    <div class="header__logo"><a href="#" class="header__logo-img"></a></div>
+                    <div class="navbar__items">
+                        <ul class="navbar__ul">
+                         <li class="navbar__item"><a href="index.html" class="item__link is--active">صفحه اصلی</a></li>
+                         <li class="navbar__item navbar__item--has-sub"><a href="" class="item__link">فروشگاه</a>
+                            <ul class="navbar__subset">
+                                <li class="navbar__item"><a href="" class="navbar__link">زیر منو 1</a></li>
+                                <li class="navbar__item"><a href="" class="navbar__link">زیر منو 2</a></li>
+                                <li class="navbar__item navbar__item--has-sub"><a href="" class="navbar__link">زیر منو 3</a>
+                                    <ul class="navbar__subset">
+                                        <li class="navbar__item"><a href="" class="navbar__link">زیر منو 1</a></li>
+                                        <li class="navbar__item"><a href="" class="navbar__link">زیر منو 2</a></li>
+                                        <li class="navbar__item navbar__item--has-sub"><a href="" class="navbar__link">زیر منو 3</a>
+                                            <ul class="navbar__subset">
+                                                <li class="navbar__item"><a href="" class="navbar__link">زیر منو 1</a></li>
+                                                <li class="navbar__item"><a href="" class="navbar__link">زیر منو 2</a></li>
+                                                <li class="navbar__item"><a href="" class="navbar__link">زیر منو 3</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                         <li class="navbar__item"><a href="" class="item__link">درباره ما</a></li>
+                         <li class="navbar__item"><a href="" class="item__link">تماس با ما</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar__action">
+
+                        <div class="header__basket">
+                            <span class="header__basket-icon"></span>
+                            <span class="header__basket-count">0</span>
+                            <div id="tt" class="header__dropdown">
+                                <div class="header__dropdown-content header__dropdown-content--overflow">
+                                    <div class="header__basket--item">
+                                        <a href="" class="header__basket--link">
+                                            <img src="img/big-pic.jpg" class="header__basket--img">
+                                        </a>
+                                        <div class="header__basket--details">
+                                            <h5><a href="" class="header__basket--title">محصول شماره 1</a></h5>
+                                            <div class="header__basket--price">120000 تومان</div>
+                                            <a href="" class="header__basket--remove">حذف</a>
+                                        </div>
+                                    </div>
+                                    <div class="header__basket--item">
+                                        <a href="" class="header__basket--link">
+                                            <img src="img/big-pic.jpg" class="header__basket--img">
+                                        </a>
+                                        <div class="header__basket--details">
+                                            <h5><a href="" class="header__basket--title">محصول شماره 1</a></h5>
+                                            <div class="header__basket--price">120000 تومان</div>
+                                            <a href="" class="header__basket--remove">حذف</a>
+                                        </div>
+                                    </div>
+                                    <div class="header__basket--item">
+                                        <a href="" class="header__basket--link">
+                                            <img src="img/big-pic.jpg" class="header__basket--img">
+                                        </a>
+                                        <div class="header__basket--details">
+                                            <h5><a href="" class="header__basket--title">محصول شماره 1</a></h5>
+                                            <div class="header__basket--price">120000 تومان</div>
+                                            <a href="" class="header__basket--remove">حذف</a>
+                                        </div>
+                                    </div>
+                                    <div class="header__basket--btn">
+                                        <a href="cart.html" class="btn btn--brand btn--boxshadow w--100">ثبت و نهایی کردن سفارش</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header__account">
+                            <span class="header__account-icon"></span>
+                            <div id="tt" class="header__dropdown header__dropdown--w200">
+                                <div class="header__dropdown-content">
+                                    <a href="sign-in.html" class="header__account--link">ورود</a>
+                                    <a href="sign-up.html" class="header__account--link">ثبت نام</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__top">
+                <div class="header__top--content">
+                    <h1 class="header__top--h1">وب آموز : پلی برای یادگیری</h1>
+                    <p class="header__top--p">با کمترین هزینه و بیشترین بازدهی</p>
+                </div>
+                <form class="header__form">
+                    <div class="header__search">
+                        <input type="text" class="header__search--input" placeholder="جستجو کنید...">
+                        <button class="header__search--btn btn btn--brand btn--boxshadow"></button>
+                    </div>
+                </form>
+            </div>
+        </div> 
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="slideshow">
+                    <a onclick="move(-1)" class="slideshow__prev">&#10095</a>
+                    <a onclick="move(1)" class="slideshow__next">&#10094</a>
+                    
+
+                    <a href="" class="slideshow__slide"><img src="img/slideshow/1.png" alt="" class="slideshow__slide--img"></a>
+                    <a href="" class="slideshow__slide"><img src="img/slideshow/2.png" alt="" class="slideshow__slide--img"></a>
+                    <a href="" class="slideshow__slide"><img src="img/slideshow/3.png" alt="" class="slideshow__slide--img"></a>
+                    <a href="" class="slideshow__slide"><img src="img/slideshow/4.png" alt="" class="slideshow__slide--img"></a>
+
+
+
+
+                    <div class="slideshow__items">
+                        <div class="slideshow__item"><div class="slideshow__item--inner"></div></div>
+                        <div class="slideshow__item"><div class="slideshow__item--inner"></div></div>
+                        <div class="slideshow__item"><div class="slideshow__item--inner"></div></div>
+                        <div class="slideshow__item"><div class="slideshow__item--inner"></div></div>
+                    </div>
+                </div>
+                
+
+                <div class="slider">
+                    <div class="slider__head"><span class="slider__title">موبایل
+                    </span></div>
+                    <div class="slider__content">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+
+                                <a href="product.html" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/1.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+                                <a href="" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/2.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+                                <a href="" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/3.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+                                <a href="" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/4.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+                                <a href="" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/5.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+                                <a href="" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/6.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">&#10095</div>
+                    <div class="swiper-button-prev">&#10094</div>
+                </div>
+
+                <aside class="placepic">
+                    <div class="placepic__row">
+                        <a href="" class="placepic__link"><img src="img/pic1.jpg" alt="" class="placepic__img"></a>
+                        <a href="" class="placepic__link"><img src="img/pic2.jpg" alt="" class="placepic__img"></a>
+                    </div>
+                </aside>
+
+
+                
+                <div class="slider">
+                    <div class="slider__head"><span class="slider__title">موبایل
+                    </span></div>
+                    <div class="slider__content">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+
+                                <a href="product.html" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/1.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+                                <a href="" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/2.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+                                <a href="" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/3.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+                                <a href="" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/4.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+                                <a href="" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/5.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+                                <a href="" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/6.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">&#10095</div>
+                    <div class="swiper-button-prev">&#10094</div>
+                </div>
+
+                
+                <div class="slider">
+                    <div class="slider__head"><span class="slider__title">موبایل
+                    </span></div>
+                    <div class="slider__content">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+
+                                <a href="product.html" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/1.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+                                <a href="" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/2.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+                                <a href="" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/3.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+                                <a href="" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/4.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+                                <a href="" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/5.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+                                <a href="" class="swiper-slide">
+                                    <div class="swiper-item">
+                                        <div class="slider__image"><img src="img/slider/6.jpg" alt="" class="slider__img"></div>
+
+                                        <div class="slider__title-item">
+                                            گوشی موبایل سامسونگ مدل نوت 20
+                                        </div>
+                                        <div class="slider__price">
+                                            <span class="slider__compare-price">20,200,000</span>
+                                            <span class="slider__total-price">20,400,000 تومان</span>
+                            
+                                        </div>
+                                        <span class="slider__discount">6%</span>
+
+                                    </div>
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">&#10095</div>
+                    <div class="swiper-button-prev">&#10094</div>
+                </div>
+
+
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            <span class="scroll__top"></span>
+
+            <div class="footer__top">
+                <div class="container">
+                    <div class="footer__row">
+                        <div class="footer__getcall">
+                            <img src="img/tamasbama.png" alt="">
+                            <div class="footer__getcall-desc">
+                                <h3 class="footer__getcall-h3">با ما تماس بگیرید</h3>
+                                <span class="footer__getcall-span">برای ثبت سفارش ومشاوره با مشاوران ما تماس بگیرید !</span>
+                            </div>
+                        
+                        </div>
+                        <div class="footer__info">
+                            <span class="footer__info-span">Email : info@admin.com</span>
+                            <span class="footer__info-span margin--right-10">Tel : 1023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__main">
+                <div class="container">
+                    <div class="footer__links">
+                        <a href="" class="footer__link">لینک اول</a>
+                        <a href="" class="footer__link">لینک اول</a>
+                        <a href="" class="footer__link">لینک اول</a>
+                        <a href="" class="footer__link">لینک اول</a>
+                        <a href="" class="footer__link">لینک اول</a>
+                        <a href="" class="footer__link">لینک اول</a>
+                    </div>
+                    <div class="footer__hr">
+                        <div class="footer__about">
+                            <p class="footer__text">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،د.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottem">
+                     طراحی و توسعه توسط
+                    <a class="footer__copy" href="">رضا</a>
+                </div>
+
+            </div>
+
+        </footer>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js">
+
+
+    </script>
+    <script src="js/js.js"></script>
+</body>
+</html>
